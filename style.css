@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.header {
+  margin-top: 36px;
+  color: #fff;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 5px;
+          column-gap: 5px;
+}
+
+.header__logo-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.header__nav {
+  width: 100%;
+}
+
+.header__list {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+  max-width: 550px;
+}
+
+.header__list-link {
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+}
+
+.header__list-link::after {
+  position: absolute;
+  content: '';
+  background-color: #fff;
+  width: 0px;
+  height: 2px;
+  border-radius: 4px;
+  bottom: -8px;
+  left: 0px;
+  -webkit-transition: 0.2s width linear;
+  transition: 0.2s width linear;
+}
+
+.header__list-link:hover::after {
+  width: 100%;
+  -webkit-transition: 0.2s width linear;
+  transition: 0.2s width linear;
+}
+
+.header__search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__search-input {
+  width: 125px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 12px;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.header__search-input-wrapper {
+  position: relative;
+}
+
+.header__search-input-wrapper::after {
+  position: absolute;
+  content: '';
+  background-image: url("./img/icons/Search.svg");
+  width: 17px;
+  height: 17px;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+/*# sourceMappingURL=style.css.map */

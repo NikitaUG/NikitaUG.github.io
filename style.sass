@@ -1,0 +1,83 @@
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+body
+    background-color: black
+.container
+    max-width: 1300px
+    margin: 0 auto
+
+.header
+    margin-top: 36px
+    color: #fff
+    font-family: 'Open Sans Condensed', sans-serif
+    font-weight: 700
+    font-size: 18px
+    line-height: 25px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &__logo
+        display: flex
+        align-items: center
+        column-gap: 5px
+        &-link
+            text-decoration: none
+            color: #fff
+    &__nav
+        width: 100%
+
+    &__list
+        margin: 0 auto
+        display: flex
+        justify-content: space-between
+        list-style: none
+        max-width: 550px
+        &-link
+            color: #fff
+            text-decoration: none
+            position: relative
+            &::after
+                position: absolute
+                content: ''
+                background-color: #fff
+                width: 0px
+                height: 2px
+                border-radius: 4px
+                bottom: -8px
+                left: 0px
+                transition: 0.2s width linear
+            &:hover::after
+                width: 100%
+                transition: 0.2s width linear
+    &__search
+        display: flex
+        column-gap: 10px
+        align-items: center
+        &-input
+
+            width: 125px
+            background-color: transparent
+            border: none
+            outline: none
+            border-bottom: 2px solid #fff
+            padding-bottom: 12px
+            color: #fff
+            font-family: 'Open Sans', sans-serif
+            font-size: 14px
+            font-weight: 400
+            &-wrapper
+                position: relative
+                &::after
+                    position: absolute
+                    content: ''
+                    background-image: url('./img/icons/Search.svg')
+                    width: 17px
+                    height: 17px
+                    right: 0
+                    top: 50%
+                    transform: translateY(-50%)
+                    
